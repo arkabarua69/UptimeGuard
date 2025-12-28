@@ -33,6 +33,7 @@ It tracks availability, latency, and sends downtime & recovery alerts using slas
 pip install -r requirements.txt
 python bot.py
 ```
+---
 # UptimeGuard – Release Notes
 
 ## 🚀 Version 1.0.0 – Initial Production Release
@@ -66,14 +67,7 @@ python bot.py
 - Safe background tasks
 - Graceful shutdown handling
 
----
 
-## 🛣️ Planned for Future Releases
-- MongoDB persistence
-- Per-service alert channels
-- Alert cooldowns
-- Web dashboard
-- SLA reports
 
 ---
 
