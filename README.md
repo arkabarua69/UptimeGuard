@@ -6,7 +6,6 @@ Production-grade Discord uptime monitoring bot.
 - Slash commands
 - Async monitoring
 - Render compatible
-- MongoDB ready
 
 ## Author
 Mac GunJon
