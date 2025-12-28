@@ -1,3 +1,7 @@
 aiohttp
 discord.py>=2.4.0
+<<<<<<< HEAD
+=======
+flask
+>>>>>>> 7064674 (Initial clean production commit)
 python-dotenv
