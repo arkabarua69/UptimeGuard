@@ -7,20 +7,14 @@ Production-Grade Entry Point
 import asyncio
 import signal
 import sys
-<<<<<<< HEAD
-=======
 import threading
->>>>>>> 7064674 (Initial clean production commit)
 import discord
 from discord.ext import commands
 
 from core.config import BOT_TOKEN
 from core.logger import setup_logger
 from services.monitor_service import start_monitor_loop
-<<<<<<< HEAD
-=======
 from web.keep_alive import run_server  # <-- ADD THIS
->>>>>>> 7064674 (Initial clean production commit)
 
 # --------------------------------------------------
 # LOGGING
@@ -57,11 +51,7 @@ async def load_extensions_safe():
             await bot.load_extension(ext)
             logger.info(f"Loaded extension: {ext}")
         except Exception as e:
-<<<<<<< HEAD
-            logger.exception(f"Failed to load extension {ext}: {e}")
-=======
             logger.exception(f"Failed to load extension {ext}", exc_info=e)
->>>>>>> 7064674 (Initial clean production commit)
 
 
 # --------------------------------------------------
@@ -129,8 +119,6 @@ async def main():
         logger.critical("DISCORD_TOKEN is missing. Bot cannot start.")
         sys.exit(1)
 
-<<<<<<< HEAD
-=======
     # --------------------------------------------------
     # START WEB SERVER (RENDER REQUIREMENT)
     # --------------------------------------------------
@@ -141,7 +129,6 @@ async def main():
     ).start()
     logger.info("Web server started (Render)")
 
->>>>>>> 7064674 (Initial clean production commit)
     register_signal_handlers()
 
     try:
