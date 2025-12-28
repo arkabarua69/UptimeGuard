@@ -14,7 +14,7 @@ from discord.ext import commands
 from core.config import BOT_TOKEN
 from core.logger import setup_logger
 from services.monitor_service import start_monitor_loop
-from web.keep_alive import run_server  # <-- ADD THIS
+from web.keep_alive import run_server 
 
 # --------------------------------------------------
 # LOGGING
